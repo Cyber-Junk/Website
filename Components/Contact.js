@@ -25,19 +25,19 @@ import {
   MdOutlineEmail,
 } from 'react-icons/md';
 import { BsPerson } from 'react-icons/bs';
-import { FaLinkedin, FaTwitter, FaDiscord } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Contact() {
   return (
-    <Container maxW="full" mt={0} centerContent overflow="hidden">
-      <Flex justifyContent={'center'}>
+    <Container maxW="full" py={10} centerContent overflow="hidden">
+      <Flex justifyContent={'center'} rounded={'xl'}>
         <Box
-          style={{ backdropFilter: "blur(10px)" }}
-          shadow={'lg'}
-          color="white"
-          borderRadius="lg"
-          p={10}  
-          >
+          style={{ backdropFilter: "blur(5px)" }}
+          shadow={'2xl'}
+          color={'white'}
+          rounded={'2xl'}
+          p={10}
+        >
           <Box p={4}>
             <Flex spacing={{ base: 20, sm: 3, md: 5, lg: 20 }} justifyContent={'center'} flexWrap={'wrap'}>
               <Flex justifyContent={'center'} mx={5}>
@@ -54,8 +54,10 @@ export default function Contact() {
                         width="200px"
                         variant="ghost"
                         color="white"
-                        _hover={{ border: '2px solid #682ae9' }}
-                        leftIcon={<MdPhone color="#682ae9" size="20px" />}>
+                        _focus={{ border: 'none' }}
+                        _hover={{ border: '2px solid #6B46C1' }}
+                        _active={{ bg: 'transparent' }}
+                        leftIcon={<MdPhone color="#6B46C1" size="20px" />}>
                         +91-988888888
                       </Button>
                       <Button
@@ -64,8 +66,10 @@ export default function Contact() {
                         width="200px"
                         variant="ghost"
                         color="white"
-                        _hover={{ border: '2px solid #682ae9' }}
-                        leftIcon={<MdEmail color="#682ae9" size="20px" />}>
+                        _focus={{ border: 'none' }}
+                        _hover={{ border: '2px solid #6B46C1' }}
+                        _active={{ bg: 'transparent' }}
+                        leftIcon={<MdEmail color="#6B46C1" size="20px" />}>
                         hello@abc.com
                       </Button>
                       <Button
@@ -74,8 +78,10 @@ export default function Contact() {
                         width="200px"
                         variant="ghost"
                         color="white"
-                        _hover={{ border: '2px solid #682ae9' }}
-                        leftIcon={<MdLocationOn color="#682ae9" size="20px" />}>
+                        _focus={{ border: 'none' }}
+                        _hover={{ border: '2px solid #6B46C1' }}
+                        _active={{ bg: 'transparent' }}
+                        leftIcon={<MdLocationOn color="#6B46C1" size="20px" />}>
                         Karnavati, India
                       </Button>
                     </VStack>
@@ -86,31 +92,34 @@ export default function Contact() {
                     px={5}
                     alignItems="flex-start">
                     <IconButton
-                      aria-label="facebook"
+                      aria-label="Linkedin"
                       variant="ghost"
                       size="lg"
                       isRound={true}
                       _focus={{ border: "none" }}
-                      _hover={{ bg: 'purple.500' }}
+                      _hover={{ bg: 'purple.600' }}
+                      _active={{ bg: 'purple.500' }}
                       icon={<FaLinkedin size="28px" />}
                     />
                     <IconButton
-                      aria-label="github"
+                      aria-label="Twitter"
                       variant="ghost"
                       size="lg"
                       isRound={true}
                       _focus={{ border: "none" }}
-                      _hover={{ bg: 'purple.500' }}
+                      _hover={{ bg: 'purple.600' }}
+                      _active={{ bg: 'purple.500' }}
                       icon={<FaTwitter size="28px" />}
                     />
                     <IconButton
-                      aria-label="discord"
+                      aria-label="Instagram"
                       variant="ghost"
                       size="lg"
                       isRound={true}
                       _focus={{ border: "none" }}
-                      _hover={{ bg: 'purple.500' }}
-                      icon={<FaDiscord size="28px" />}
+                      _hover={{ bg: 'purple.600' }}
+                      _active={{ bg: 'purple.500' }}
+                      icon={<FaInstagram size="28px" />}
                     />
                   </HStack>
                 </Box>
@@ -126,7 +135,7 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input type="text" size="md" />
+                          <Input type="text" size="md" _focus={{borderColor: "purple.600"}}/>
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -136,7 +145,7 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<MdOutlineEmail color="gray.800" />}
                           />
-                          <Input type="text" size="md" />
+                          <Input type="text" size="md" _focus={{borderColor: "purple.600"}}/>
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -147,18 +156,22 @@ export default function Contact() {
                             borderRadius: 'gray.300',
                           }}
                           placeholder="message"
+                          _focus={{borderColor: "purple.600"}}
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
                         <Button
                           variant="solid"
-                          bg="purple.500"
+                          bg="purple.600"
                           color="white"
                           _hover={{
-                            bg: "purple.600"
+                            bg: "purple.500"
                           }}
                           _focus={{
                             border: "none",
+                          }}
+                          _active={{
+                            bg: 'purple.600'
                           }}
                         >
                           Send Message

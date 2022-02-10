@@ -19,11 +19,13 @@ import {
 import { BsCalendar2Event } from 'react-icons/bs';
 import { HiOutlineUserGroup } from 'react-icons/hi';
 import { MdContacts } from 'react-icons/md';
+import { SiGithubsponsors } from 'react-icons/si';
 
 const LinkItems = [
     { name: 'Home', icon: FiHome, href: "/" },
     { name: 'Events', icon: BsCalendar2Event, href: "/illustrations" },
     { name: 'Team', icon: HiOutlineUserGroup, href: "/icons" },
+    { name: 'Sponsors', icon: SiGithubsponsors, href: "/sponsors" },
     { name: 'Contact Us', icon: MdContacts, href: "/vectors" },
 ];
 
