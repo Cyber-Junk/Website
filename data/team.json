@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Prasan Singh",
+    "post": "Founder",
+    "img": "Prasan.webp",
+    "twitter": "https://twitter.com/parsan26",
+    "linkedin": "https://www.linkedin.com/in/prasan-singh-13ba15198/",
+    "github": "https://github.com/Prasan26"
+  },
+  {
+    "id": 2,
+    "name": "Harsh Sachaniya",
+    "post": "Developer",
+    "img": "Harsh.webp",
+    "twitter": "https://twitter.com/HarshGa99484485",
+    "linkedin": "https://linkedin.com/in/harsh2220",
+    "github": "https://github.com/harsh2220"
+  }
+]

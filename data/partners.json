@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "hackclub",
+    "link": "https://hackclub.com/"
+  },
+  {
+    "id": 2,
+    "name": "xssrat",
+    "link": "https://thexssrat.podia.com/"
+  },
+  {
+    "id": 3,
+    "name": "hauntedhacker",
+    "link": "https://thehauntedhacker.com/"
+  },
+  {
+    "id": 4,
+    "name": "hackclubsvit",
+    "link": "https://www.hackclubsvit.co/"  
+  }
+]

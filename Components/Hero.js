@@ -1,20 +1,32 @@
 import {
   Container,
+  Center,
   Stack,
-  Flex,
-  Box,
   Heading,
   Text,
-  Button,
+  Flex,
   Image,
-  Center,
+  Button,
+  Box,
+  Link,
+  chakra,
+  Img,
 } from "@chakra-ui/react";
-import { useRouter } from "next/router";
 
-export default function Error() {
-  const router = useRouter();
+function Hero() {
   return (
-    <Container maxW={"7xl"} minH={"100vh"} mt={["10", "10", "0"]}>
+    <Container maxW={"7xl"} minH={"100vh"} mt={["16", "16", "0"]}>
+      {/* <a href="https://hackclub.com/">
+        <Img
+          h="60px"
+          w="auto"
+          pos={["relative", "relative", "absolute"]}
+          top="5"
+          left="200px"
+          src="/2022.svg"
+          alt="Hack Club"
+        />
+      </a> */}
       <Center height={"100%"}>
         <Stack
           align={"center"}
@@ -33,38 +45,39 @@ export default function Error() {
               fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
             >
               <Text as={"span"} position={"relative"} color={"white"}>
-                404
+                Let's Research
               </Text>
               <br />
-              <Text
-                as={"span"}
-                color={"purple.600"}
-                position={"relative"}
-                textTransform={"capitalize"}
-              >
-                Page not found
+              <Text as={"span"} color={"purple.600"} position={"relative"}>
+                Cyber Security
               </Text>
             </Heading>
-            <Text color={"gray.300"} position={"relative"} fontSize={"xl"}>
-              The page you're looking for does not seem to exist
+            <Text color={"gray.300"} position={"relative"}>
+              CyberJunk is a global initiative to promote international infosec
+              research culture. The community provides free courses and
+              uncountable infosec resources like roadmaps & tools.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: "column", sm: "row" }}
             >
-              <Button
-                rounded={"full"}
-                size={"lg"}
-                px={6}
-                color={"white"}
-                bg={"purple.600"}
-                _hover={{ bg: "purple.500" }}
-                _focus={{ border: "none" }}
-                _active={{ bg: "purple.600" }}
-                onClick={() => router.replace("/")}
+              <chakra.a
+                href="https://discord.com/invite/ZmCmkw2enz"
+                target="_blank"
               >
-                Go to Home
-              </Button>
+                <Button
+                  rounded={"full"}
+                  size={"lg"}
+                  px={6}
+                  color={"white"}
+                  bg={"purple.600"}
+                  _hover={{ bg: "purple.500" }}
+                  _focus={{ border: "none" }}
+                  _active={{ bg: "purple.600" }}
+                >
+                  Join community
+                </Button>
+              </chakra.a>
             </Stack>
           </Stack>
           <Flex
@@ -76,7 +89,9 @@ export default function Error() {
           >
             <Box
               position={"relative"}
+              // height={'300px'}
               rounded={"2xl"}
+              // boxShadow={'2xl'}
               width={"full"}
               overflow={"hidden"}
             >
@@ -86,7 +101,7 @@ export default function Error() {
                 align={"center"}
                 w={"100%"}
                 h={"100%"}
-                src={"/error.webp"}
+                src={"/home.webp"}
               />
             </Box>
           </Flex>
@@ -95,3 +110,5 @@ export default function Error() {
     </Container>
   );
 }
+
+export default Hero;

@@ -49,7 +49,7 @@ export default function Particle() {
                         opacity: 1,
                         width: 1,
                     },
-                    collisions: {   
+                    collisions: {
                         enable: true,
                     },
                     move: {
