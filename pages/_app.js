@@ -7,7 +7,7 @@ import Mask from "../Components/Mask";
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      {/* <Particle /> */}
+      <Particle />
       <Layout>
         <Component {...pageProps} />
       </Layout>
