@@ -1,4 +1,4 @@
-import { Flex, Box, Img, Heading } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import Sponsor from "../Components/Sponsor";
 import SPONSORS from "../data/sponsor.json";
 import PARTNERS from "../data/partners.json";
