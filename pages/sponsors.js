@@ -13,7 +13,9 @@ function Sponsors() {
       w="full"
       mt={["16", "16", "0"]}
     >
-      <Heading my="10">Sponsors</Heading>
+      <Heading my="10" zIndex={1}>
+        Sponsors
+      </Heading>
       <Flex
         w="full"
         flexDir={"row"}
@@ -25,7 +27,9 @@ function Sponsors() {
           <Sponsor name={sponsor.name} link={sponsor.link} />
         ))}
       </Flex>
-      <Heading my="10">Community Partners</Heading>
+      <Heading my="10" zIndex={1}>
+        Community Partners
+      </Heading>
       <Flex
         w="full"
         flexDir={"row"}
