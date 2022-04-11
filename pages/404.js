@@ -46,7 +46,7 @@ export default function Error() {
               </Text>
             </Heading>
             <Text color={"gray.300"} position={"relative"} fontSize={"xl"}>
-              The page you're looking for does not seem to exist
+              The page you are looking for does not seem to exist
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}

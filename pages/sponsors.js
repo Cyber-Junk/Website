@@ -24,7 +24,7 @@ function Sponsors() {
         my={10}
       >
         {SPONSORS.map((sponsor) => (
-          <Sponsor name={sponsor.name} link={sponsor.link} />
+          <Sponsor key={sponsor.id} name={sponsor.name} link={sponsor.link} />
         ))}
       </Flex>
       <Heading my="10" zIndex={1}>
@@ -38,7 +38,7 @@ function Sponsors() {
         my={10}
       >
         {PARTNERS.map((partner) => (
-          <Sponsor name={partner.name} link={partner.link} />
+          <Sponsor key={sponsor.id} name={partner.name} link={partner.link} />
         ))}
       </Flex>
     </Flex>
