@@ -38,7 +38,7 @@ function Sponsors() {
         my={10}
       >
         {PARTNERS.map((partner) => (
-          <Sponsor key={sponsor.id} name={partner.name} link={partner.link} />
+          <Sponsor key={partner.id} name={partner.name} link={partner.link} />
         ))}
       </Flex>
     </Flex>
