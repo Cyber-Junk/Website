@@ -4,7 +4,6 @@ export default function MyDocument() {
   return (
     <Html>
       <Head>
-        <title>CyberJunk</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
